@@ -20,3 +20,24 @@ Route::middleware(['auth'])->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+Route::get('/Cement', function () {
+    return view('Cement');
+})->name('Cement');
+
+Route::get('/Electricals', function () {
+    return view('Electricals');
+})->name('Electricals');
+
+Route::get('/Labour', function () {
+    return view('Labour');
+})->name('Labour');
+
+Route::get('/Status', function () {
+    return view('Status');
+})->name('Status');
+
+Route::get('/Tools', function () {
+    return view('Tools');
+})->name('Tools');
+
